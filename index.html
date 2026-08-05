@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
+
         <h1>Task Manager</h1>
-        <input type="text" id="taskInput" placeholder="Enter a task">
-        <button onclick="checkTask()">Add Task</button>
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter your task"
+            autocomplete="off"
+        >
+
+        <button onclick="checkTask()">
+            Add Task
+        </button>
+
         <p id="message"></p>
+
+        <hr>
+
         <div class="info">
-            <p>Total tasks: <span id="total">0</span></p>
+            <p>Total Tasks: <span id="total">0</span></p>
         </div>
+
     </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
