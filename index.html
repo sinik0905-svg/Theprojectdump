@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Improvement Practice</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
+<div class="main-container">
+
+    <!-- Left Side -->
     <div class="container">
 
         <h1>Task Manager</h1>
@@ -15,9 +22,25 @@
         <input
             type="text"
             id="taskInput"
-            placeholder="Enter your task"
+            placeholder="Enter Task Name"
             autocomplete="off"
         >
+
+        <input
+            type="date"
+            id="schedule"
+        >
+
+        <select id="priority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+        </select>
+
+        <select id="status">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
 
         <button onclick="checkTask()">
             Add Task
@@ -28,12 +51,45 @@
         <hr>
 
         <div class="info">
-            <p>Total Tasks: <span id="total">0</span></p>
+            <p>Total Tasks : <span id="total">0</span></p>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <!-- Right Side -->
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>S.No</th>
+                    <th>Task Name</th>
+                    <th>Schedule</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Modified At</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="taskTableBody">
+
+                <!-- JavaScript will insert rows here -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
