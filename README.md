@@ -1,69 +1,29 @@
-# BMI Calculator
+# 💰 PennyPilot
 
-A simple BMI (Body Mass Index) Calculator built using HTML, CSS, and JavaScript.
+PennyPilot is a simple and beginner-friendly expense tracker built using HTML, CSS, and JavaScript.
 
-## Features
+It allows users to add their expenses, view them on the webpage, delete expenses, and automatically calculate the total amount spent.
 
-* Enter weight in kilograms
-* Enter height in centimeters
-* Calculate BMI instantly
-* Displays BMI up to two decimal places
-* Shows BMI category:
+## ✨ Features
 
-  * Underweight
-  * Normal weight
-  * Overweight
-  * Obese
-* Simple and responsive user interface
+- Add an expense
+- Enter expense amount
+- Display all expenses
+- Delete an expense
+- Automatically calculate total expenses
+- Simple and clean user interface
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML
+- CSS
+- JavaScript
 
-## BMI Formula
-
-BMI is calculated using:
-
-**BMI = Weight (kg) / Height² (m)**
-
-The calculator converts height from centimeters to meters before calculating the BMI.
-
-## BMI Categories
-
-| BMI Range    | Category      |
-| ------------ | ------------- |
-| Below 18.5   | Underweight   |
-| 18.5 – 24.9  | Normal weight |
-| 25 – 29.9    | Overweight    |
-| 30 and above | Obese         |
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
-mybmi/
+PennyPilot/
+│
 ├── index.html
 ├── style.css
-├── script.js
-└── README.md
-```
-
-## How to Run
-
-1. Download or clone the repository.
-2. Open the `mybmi` folder.
-3. Open `index.html` in a web browser.
-4. Enter your weight and height.
-5. Click **Calculate BMI**.
-
-## Learning Purpose
-
-This project was created to practice:
-
-* DOM manipulation
-* Getting values from HTML inputs
-* JavaScript calculations
-* `if...else` conditions
-* Button click events
-* Displaying dynamic results on a webpage
+└── script.js
